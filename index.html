@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Notas</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Notas de Estudiantes</h1>
+    
+    <!-- Formulario para ingresar datos -->
+    <div class="form-container">
+      <form id="formularioNotas">
+        <div class="form-group">
+          <label for="nombre">Nombre del estudiante:</label>
+          <input type="text" id="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="nota">Nota:</label>
+          <input type="number" id="nota" min="0" max="10" required />
+        </div>
+        <button type="button" id="guardar">Guardar Nota</button>
+      </form>
+    </div>
+
+    <!-- Recuadro para visualizar los resultados -->
+    <div class="recuadro">
+      <h2>Notas Registradas</h2>
+      <table id="tablaNotas">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Notas</th>
+            <th>Promedio</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

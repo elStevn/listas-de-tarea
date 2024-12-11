@@ -1,0 +1,72 @@
+/* General: Reinicio básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilado principal para el contenedor */
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00aaff, #0047ab);
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Estilado del título principal */
+.title {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.texto-con-efecto {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  animation: slideUp 2s ease-in-out;
+}
+
+/* Estilado del slider */
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-slider img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

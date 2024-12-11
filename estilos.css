@@ -1,0 +1,104 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #008080, #7e0a25);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background: #004c4f;
+    color: #fff;
+    border-bottom: 2px solid #7e0a25;
+    width: 100%;
+  }
+  
+  main {
+    margin: 20px;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Controles de Entrada */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  button {
+    background: #008080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #005757;
+  }
+  
+  /* Contenedor de la Lista por Día */
+  .days-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    overflow-x: auto;
+  }
+  
+  .task-column {
+    flex: 1;
+    border: 2px solid #7e0a25;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .task-column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid #004c4f;
+    border-radius: 4px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item.completed {
+    background-color: #52d726;
+  }
+  
+  .task-item:hover {
+    cursor: pointer;
+  }
+  

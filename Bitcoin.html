@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página con Estilos y Animaciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <!-- Slider con animación entre imágenes -->
+ <div class="image-slider">
+  <div class="slides">
+    <img src="Bitco.jpg" alt="Bitcoin" />
+    <img src="DOM.jpg" alt="Moneda" />
+    <img src="Moneda.webp" alt="Koins" />
+  </div>
+</div>
+</div>
+
+    <!-- Botón de enlace con estilo -->
+    <div style="text-align: center; margin: 20px;">
+      <a href="https://www.google.com/finance/quote/BTC-COP?sa=X&sqi=2&ved=2ahUKEwjX7oHP1J2KAxV-RTABHSBCB7QQ-fUHegQINhAX"
+       class="button-link">Ver Bitcoin Actual</a>
+    </div>
+  </div>
+    
+  <!-- Contenedor para redes sociales en la parte izquierda flotante -->
+  <div class="social-buttons-container">
+    <div class="button" id="button1" onclick="handleClick(this, 'https://www.facebook.com')">
+      <img src="Facebook-logo-1.png" alt="Facebook">
+      <span class="text">¡Facebook!</span>
+    </div>
+
+    <div class="button" id="button2" onclick="handleClick(this, 'https://www.instagram.com')">
+      <img src="instagram-social-media-icon-design-template-vector-png_127006.jpg" alt="Instagram">
+      <span class="text">¡Instagram!</span>
+    </div>
+
+    <div class="button" id="button3" onclick="handleClick(this, 'https://twitter.com')">
+      <img src="2ba717ac010d3b9f8d26e9db4da291b8.jpg" alt="Twitter">
+      <span class="text">¡Twitter!</span>
+    </div>
+  </div>
+
+  <!-- Cargar los iconos de Font Awesome -->
+  <script src="app.js"></script>
+</body>
+</html>
